@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -16,10 +15,6 @@ const formatTimestamp = (timestamp: number) => {
 };
 
 const OwnerOneComponent = () => {
-  // const {notifications, } = useNotificationStore(
-  //   (state) => state.notifications
-  // );
-
   const notifications = useNotificationStore((state) => state.notifications);
   const isLoading = useNotificationStore((state) => state.isLoading);
   const fetchNotificationsForOwner001 = useNotificationStore(
